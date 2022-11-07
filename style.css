@@ -1,0 +1,132 @@
+ /* grid */
+ .main-div{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-row-gap: 8px;
+    grid-column-gap: 8px;
+}
+.card{
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+}
+.card1{
+    height: auto;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: green;
+}
+.card2{
+    background-color: green;
+    grid-column: 2/4;
+    
+}
+.card3{
+    background-color: red;
+    grid-column: 4/5;
+}
+.card4{ background-color: orange;
+    grid-column: 2/3;
+}
+.card5{
+    background-color: red;
+    grid-column: 3/4;
+}
+.card6{background-color: red;
+grid-column: 2/3;}
+
+.card7{background-color: orange;
+grid-column: 3/4;}
+
+.card8{
+    background-color: green;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    height: auto;
+    grid-column: 4/5;
+}
+
+
+/* 5 */
+.pseudoselector{ display: flex;justify-content: center space-around; }
+
+
+.button{
+height: 30px;
+background-color: dodgerblue;
+border-radius: 5px;
+}
+ .button:hover{
+    background-color: burlywood;
+ }
+ .button:active{
+    background-color: tomato;
+ }
+ .visited:visited{
+    color: red;
+ }
+ .button2:active{
+    background-color: greenyellow;}
+    .button2{height: 30px;
+
+background-color: deepskyblue;
+border-radius: 5px
+
+ }
+.active{ text-decoration: none;}
+.visited{
+    font-weight: 500;
+    font-size: x-large;
+    justify-self: center;
+}
+
+
+ /* 2 */
+.transition{width: 200px;
+height: 150px;background-color: blueviolet;
+transition: all 3s ;
+transition-delay: 1s;
+
+}
+.transition:hover{
+width: 400px;
+height: 300px;
+}
+
+
+/* trasform */
+.main-box{
+    display: flex;
+    padding: 10px;
+    width: auto;
+    height: 200px;
+    background-color: darkred;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: lightsalmon;
+}
+.box1-1:hover{
+    transform: scale(2);
+}
+.box1-2:hover{
+    transform: translate(20px, 20px);
+}
+.box1-3:hover{
+    transform: skewX(30deg);
+}
+div .box1-2{color: blue;}
+
+/* for css combinator */
+div p { background-color: lightslategray}
+p>span{background-color: aquamarine;}
+P+h4{color: blue;}
+h4~p{font-style: italic;}
+
